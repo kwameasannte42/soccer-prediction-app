@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const proxyUrl = 'http://localhost:5001';  // Proxy server URL
+const proxyUrl = 'https://soccer-prediction-app-backend.onrender.com';  // Proxy server URL
 
 // Fetch upcoming matches
 export const getUpcomingMatches = async (date, leagueId) => {

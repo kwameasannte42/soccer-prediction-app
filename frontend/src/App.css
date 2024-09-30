@@ -1,0 +1,168 @@
+/* General Styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #2d3436;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Form Styling */
+.prediction-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+  color: #636e72;
+}
+
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dfe6e9;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f5f6fa;
+}
+
+button[type="submit"] {
+  background-color: #0984e3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #74b9ff;
+}
+
+button {
+  background-color: #00b894;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #55efc4;
+}
+
+/* Matches Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul li p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+ul li button {
+  background-color: #0984e3;
+  color: white;
+  padding: 10px 15px;
+}
+
+ul li button:hover {
+  background-color: #74b9ff;
+}
+
+/* Predicted Team Styles */
+.prediction-result {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 6px solid #2ecc71;  /* Green bar indicating the winner */
+  font-size: 1.2rem;
+  color: #2d3436;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.prediction-result p {
+  margin: 0;
+}
+
+.prediction-result span {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.winner-home {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.winner-away {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .app-container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  ul li {
+      flex-direction: column;
+      text-align: left;
+  }
+
+  ul li button {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
